@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
+    <script src="Filter.js"></script>
+    <link rel="stylesheet" href="filter.css">
+
+    <script>
+        let arr = [
+            {name: "фывауамййймймк", code: 1},
+            {name: "зкщммвьмлкекао", code: 2},
+            {name: "сьышщуцогшкммк", code: 3},
+            {name: "авоацауцмцуммкм", code: 4},
+            {name: "огдщшдйййисипоо", code: 5},
+            {name: "мавтрлшдешцпвафив", code: 6},
+            {name: "ывмавргндщннутр", code: 7},
+            {name: "мвыфеогдншкнкьке", code: 8},
+            {name: "аывмвогдшгедеьк", code: 9},
+            {name: "мваиапоодатенут", code: 10},
+            {name: "мавирлбддешешк", code: 11},
+            {name: "мвымптрпбрдеап", code: 12},
+        ];
+
+        let filtered = "";
+        let sorted = false;
+
+        ReactDOM.render(
+            React.createElement(Filter, {arr: arr, filtered: filtered, sorted: sorted}),
+            document.getElementById("container")
+        );
+
+
+    </script>
+</body>
+</html>
