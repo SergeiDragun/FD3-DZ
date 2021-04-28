@@ -51,6 +51,10 @@ let Filter = React.createClass({
 
         this.setState({arr: newArr})
     },
+
+    reset: function() {
+        this.setState({filtered: this.props.filtered, sorted: this.props.sorted, arr: this.props.arr})
+    },
     
     render: function() {
 
@@ -61,8 +65,8 @@ let Filter = React.createClass({
         return React.DOM.div({className: "Filter"},
             React.DOM.div({className: "header"},
                 React.DOM.input({type: "checkbox", checked: this.state.sorted, onClick: this.sortedChanged}),
-                React.DOM.input({type: "text", name: "filter", defaultValue: this.props.defInp, onChange: this.filterChanged}),
-                React.DOM.input({type: "button", value: "сброс"})
+                React.DOM.input({type: "text", name: "filter", value: this.state.filtered, onChange: this.filterChanged}),
+                React.DOM.input({type: "button", value: "сброс", onClick: this.reset})
             ),
             React.DOM.div({className: "area"}, string)
        )
