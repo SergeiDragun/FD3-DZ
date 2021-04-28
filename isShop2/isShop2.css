@@ -1,0 +1,25 @@
+.IsShop2 {
+    table-layout: fixed;
+    width: 700px;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border: 1px solid grey;
+}
+
+.IsShop2 > .ShopName {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.IsShop2 > .Options {
+    background-color:  lightgray;
+}
+
+.IsShop2 > .Options > tr th {
+    border: 1px solid black;
+}
+
+.IsShop2 > .Products {
+    background-color: azure;
+}
+

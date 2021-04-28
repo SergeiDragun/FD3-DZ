@@ -10,7 +10,7 @@ let IsShop = React.createClass({
         let products = this.props.products.map(product => {
             return React.DOM.tr({key:product.code},
                 React.DOM.td( null, product.name ),
-                React.DOM.td( null, React.DOM.img({src: product.url}) ), 
+                React.DOM.td( null, React.DOM.img( {src: product.url}) ), 
                 React.DOM.td( null, product.price ),
                 React.DOM.td( null, product.balance )
             )
