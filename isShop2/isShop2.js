@@ -31,8 +31,7 @@ let IsShop2 = React.createClass({
     },
 
     deletedProduct: function(code) {
-        let productsArrCopy = this.state.products.slice()
-        let filteredProductsArr = productsArrCopy.filter(v => v.code!==code)
+        let filteredProductsArr = this.state.products.filter(v => v.code !== code)
         this.setState({products: filteredProductsArr, selectedProductCode: null})
     },
 
